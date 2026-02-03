@@ -1,0 +1,36 @@
+img{
+    width: 100px;
+}
+
+@keyframes arrow{
+    /* from {left: 0;}
+    to{left:400px;} */
+    0%{left: 0; }
+    50%{left: 400px;}
+    100%{left: 8px;} 
+    
+    
+}
+
+.mario{
+    position: relative;
+    animation: arrow 7s linear infinite;
+    width: 65px;
+}
+
+
+.sonic{
+    position: relative;
+    animation: arrow 7s linear infinite;
+    width: 50px;
+    
+}
+
+.Crash_Bandicoot{
+    display: flex;
+    justify-self: center;
+    width: 65px;
+    
+    
+}
+
