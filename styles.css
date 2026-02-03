@@ -1,0 +1,66 @@
+/* CSS Transitions */
+
+.passar-o-mouse{
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.9s ease-in-out;
+}
+.passar-o-mouse:hover{
+    background: red;
+
+}
+
+.card{
+    width: 200px;
+    height: 100px;
+    background: lightgray;
+    transition: 0.9s ease-in-out;
+}
+
+.card:hover{
+    width: 300px;
+}
+/* FIM CSS Transitions */
+
+
+/* CSS Animations */
+ @keyframes piscar{ /* piscar é o nome da variável da animação */
+    0%{opacity: 1;} 
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.botao-animado{
+     animation: piscar 1s infinite; /*Botão fica piscando infinitamente a cada 1 segundo */
+}
+
+ @keyframes colorido{ 
+    0%{background: red;} 
+    50%{background: yellow;}
+    100%{background: green;}
+}
+
+.botao-colorido{
+    padding: 15px 30px;
+    border:none;
+     color: white; /*Cor fixa */
+    animation: colorido 1s infinite; /*Botão fica trocando de cor infinitamente a cada 1 segundo */
+}
+
+
+@keyframes girar{
+    from{ transform: rotate(0deg);} 
+    to{transform: rotate(360deg);}
+}
+.botao-girar{
+    padding: 15px 30px;
+    border: none;
+    color: black;
+    animation: girar 1s infinite linear; /*Botão fica girando infinitamente a cada 1 segundo */
+
+}
+
+.botao-girar:hover{
+    animation-play-state: paused;  /*Quando passa o mouse, o botão para de girar*/
+}
