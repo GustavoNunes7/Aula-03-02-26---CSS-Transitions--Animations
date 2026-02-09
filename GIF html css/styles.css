@@ -26,7 +26,7 @@ img{
 
 .mario{
     position: relative;
-    animation: arrow 4s linear infinite;
+    animation: arrow 7s linear infinite;
     width: 65px;
     
     
@@ -36,7 +36,7 @@ img{
 
 .sonic{
     position: relative;
-    animation: arrow 4s linear infinite;
+    animation: arrow 7s linear infinite;
     width: 50px;
     
 }
