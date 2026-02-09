@@ -2,26 +2,41 @@ img{
     width: 100px;
 }
 
-@keyframes arrow{
-    /* from {left: 0;}
-    to{left:400px;} */
-    0%{left: 0; }
-    50%{left: 400px;}
-    100%{left: 8px;} 
-    
-    
-}
+  @keyframes arrow {
+    0% {
+      left: 0;
+      transform: scaleX(1); /* Indo para a direita - normal */
+    }
+    49% {
+      transform: scaleX(1); /* Mantém normal até o final */
+    }
+    50% {
+      left: calc(100% - 100px) ; /* Chega na borda direita (100px é o width do gif) */
+      transform: scaleX(0); 
+    }
+    51% {
+     /* Vira o personagem/gif no momento da borda */
+      transform: scaleX(-1); /* <--- AQUI A MÁGICA: Espelha horizontalmente */
+    }
+    100% {
+      left: 0; /* Volta para o início */
+      transform: scaleX(-1); /* Continua espelhado voltando */
+    }
+  }
 
 .mario{
     position: relative;
-    animation: arrow 7s linear infinite;
+    animation: arrow 4s linear infinite;
     width: 65px;
+    
+    
+    
 }
 
 
 .sonic{
     position: relative;
-    animation: arrow 7s linear infinite;
+    animation: arrow 4s linear infinite;
     width: 50px;
     
 }
